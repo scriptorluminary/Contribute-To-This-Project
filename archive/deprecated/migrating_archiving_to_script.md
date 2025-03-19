@@ -2,7 +2,7 @@
 
 There are 2 scripts to convert html file to json.
 
-first run:
+First, run:
 
 ```cmd
 npm i
@@ -15,10 +15,10 @@ then go to the JSON folder by running this command:
 cd JSON
 ```
 
-there you will find `multiple.js` to convert every files from [`archive`](../archive/) folder to json files in the [`converted`](converted/) folder.
-there is also `single.js` script to convert the `index.html` file to `archive_19.json` file in the converted folder.
+There, ←you will find `multiple.js` to convert every files from [`archive`](../archive/) folder to json files in the [`converted`](converted/) folder.
+There is also `single.js` script to convert the `index.html` file to `archive_19.json` file in the converted folder.
 
-all you have to do is run
+All you have to do is run
 
 ```cmd
 node multiple.js
@@ -30,15 +30,15 @@ or
 node single.js
 ```
 
-Note: while working on single.js, change the file var to a desired archive no. (here it is 19 as we already have 18 archives.)
+Note: While working on single.js, change the file var to a desired archive no. (here it is 19 as we already have 18 archives.)
 
 https://github.com/Syknapse/Contribute-To-This-Project/blob/44a4902afe47e10d4653649ca880f75373a38d6a/JSON/single.js#L4
 
-Note: while working on multiple.js, change the digit in for loop to total archive files, in this case we have 18 html files in archives.
+Note: While working on multiple.js, change the digit in for loop to total archive files, in this case we have 18 html files in archives.
 
 https://github.com/Syknapse/Contribute-To-This-Project/blob/44a4902afe47e10d4653649ca880f75373a38d6a/JSON/multiple.js#L5
 
-Note: delete the files from converted folder and try the code yourself. Happy Coding!
+Note: Delete the files from converted folder and try the code yourself. Happy Coding!
 
 ## Roadmap
 
@@ -49,15 +49,15 @@ Once that is done, it's time to implement the new system. What we want to achiev
 We will require the script to read the contents of index.html, find all elements of class .card, skip the first ten cards, convert those cards into json, export this json to the archive giving the file an ascending numerical name, then we need to rewrite the index.html removing the archived cards.  
 Finally we will need to bring the archived json files back into the DOM when the page loads.
 
-- [x] convert all current archive files to json
-- [x] use fs.readdir to read the number of files in the new json archive and increment by one for the name of the new file, add to script of exporting to json file
-- [x] combine the convert + export + delete scripts together
-- [x] add the script to npm scripts in package.json (call it archive_cards for example)
-- [x] create the JS function to import json files from archive
-- [x] create card html template
-- [x] create function that appends cards to the dom
-- [ ] once everything is tested and working, remove all old archive cards and deprecated code and docs.
-- [ ] document the usage of the script in a readme with step by step instructions for maintainers and an explanation of how it all works
+- [x] Convert all current archive files to json
+- [x] Use fs.readdir to read the number of files in the new json archive and increment by one for the name of the new file, add to script of exporting to json file
+- [x] Combine the convert + export + delete scripts together
+- [x] Add the script to npm scripts in package.json (call it archive_cards for example)
+- [x] Create the JS function to import json files from archive
+- [x] Create card html template
+- [x] Create function that appends cards to the dom
+- [ ] Once everything is tested and working, remove all old archive cards and deprecated code and docs.
+- [ ] Document the usage of the script in a readme with step by step instructions for maintainers and an explanation of how it all works
 
 Example of delete cards script
 
